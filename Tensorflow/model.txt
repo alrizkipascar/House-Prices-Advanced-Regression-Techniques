@@ -1,0 +1,17 @@
+
+        Dense(64, activation="relu"),
+        Dense(64, activation="relu"),
+
+0.16
+model = Sequential(
+    [
+        normalizer,
+        tf.keras.Input(shape=(33,)),
+        Dense(64, activation="relu"),
+        Dense(64, activation="relu"),
+        Dense(64, activation="relu"),
+        Dense(1, activation="linear")
+    ],name= "model"
+
+)
+#, activation="linear"
